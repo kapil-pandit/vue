@@ -1,0 +1,54 @@
+/* src/components/navbar.css */
+
+.navbar-container {
+    @apply absolute top-0 left-0 w-full transition-all duration-500 ease-in-out;
+  }
+  
+  .navbar-visible {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .navbar-hidden {
+    @apply opacity-0 -translate-y-full pointer-events-none;
+  }
+  
+  .navbar-wrapper {
+    @apply max-w-7xl mx-auto flex items-center justify-between px-8 py-4 
+           shadow-xl rounded-b-2xl bg-black/80 backdrop-blur-md;
+  }
+  
+  .navbar-logo {
+    @apply text-2xl font-bold tracking-wide text-blue-400;
+  }
+  
+  .navbar-menu {
+    @apply flex gap-10 text-lg font-medium;
+  }
+  
+  .navbar-menu-item {
+    @apply relative cursor-pointer transition group;
+  }
+  
+  .navbar-menu-link {
+    @apply hover:text-blue-400;
+  }
+  
+  .navbar-menu-underline {
+    @apply absolute left-0 bottom-[-6px] h-[2px] w-0 bg-blue-400 
+           transition-all duration-300 group-hover:w-full;
+  }
+  
+  .auth-buttons {
+    @apply flex gap-4;
+  }
+  
+  .btn-login {
+    @apply px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 
+           transition font-semibold shadow-md;
+  }
+  
+  .btn-logout {
+    @apply px-5 py-2 rounded-lg bg-red-600 hover:bg-red-700 
+           transition font-semibold shadow-md;
+  }
+  
